@@ -1,0 +1,74 @@
+/*-------------------------------------------- Base Style ----------------------------------------*/
+		* {
+			margin: 0px;
+			padding: 0px;
+			box-sizing : border-box;
+		}
+		body {
+			font-family: "Arial", Georgia, Serif;
+		}
+		h1{
+			margin: 20px;
+			text-align: center;
+		}
+		#row{
+			width: 100%;
+		}
+		section{
+			width: 94%;
+			background-color: gray;
+			border: 2px solid black;
+			margin: 1%;
+			position: relative;
+			padding: 0px 1% 1% 1%;
+		}
+		.alignment1, .alignment2, .alignment3{
+			width: 50%;
+			position: relative;
+			left: 51.55%;
+			text-align: center;
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+			border-left: 2px solid black;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.alignment1{
+			background-color: #ffb3b3;
+		}
+		.alignment2{
+			background-color: #b30000;
+			color: white;
+		}
+		.alignment3{
+			background-color: #e6e600;
+		}
+	/*------------------------------------------------ For larger Screens --------------------------------------------*/
+	@media(min-width: 992px){
+		.col-lg-4{
+			width: 30%;
+			float: left;
+		}
+		.alignment1, .alignment2, .alignment3{
+			position: relative;
+			left: 54%;
+		}
+	}
+	/*------------------------------------------------ For Tablets -------------------------------------------------*/
+	@media(min-width: 768px) and (max-width: 991px){
+		.col-md-6{
+			width: 47%;
+			float: left;
+		}
+		.alignment1, .alignment2{
+			position: relative;
+			left: 53%;
+		}
+		#full{
+			width: 96%;
+		}
+		.alignment3{
+			position: relative;
+			left: 51.4%;
+		}
+	}
